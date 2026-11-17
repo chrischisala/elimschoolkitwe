@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e2a47" />
+      <stop offset="50%" stop-color="#143b66" />
+      <stop offset="100%" stop-color="#0a1d33" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#05101e" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ring / Glow -->
+  <circle cx="250" cy="245" r="235" fill="none" stroke="url(#goldGrad)" stroke-width="3" opacity="0.4" stroke-dasharray="8 6"/>
+
+  <!-- Shield Shape -->
+  <g filter="url(#shadow)">
+    <!-- Outer Shield Border -->
+    <path d="M 250,35 C 360,35 410,75 410,185 C 410,310 320,400 250,445 C 180,400 90,310 90,185 C 90,75 140,35 250,35 Z"
+          fill="url(#goldGrad)" stroke="#78350f" stroke-width="2" />
+    <!-- Inner Shield Border (Navy Background) -->
+    <path d="M 250,47 C 348,47 394,83 394,185 C 394,298 312,382 250,425 C 188,382 106,298 106,185 C 106,83 152,47 250,47 Z"
+          fill="url(#shieldGrad)" stroke="#fcd34d" stroke-width="2.5" />
+  </g>
+
+  <!-- Shield Internal Decorative Rays -->
+  <g opacity="0.12" stroke="#fbbf24" stroke-width="1.5">
+    <line x1="250" y1="180" x2="130" y2="70" />
+    <line x1="250" y1="180" x2="170" y2="55" />
+    <line x1="250" y1="180" x2="250" y2="50" />
+    <line x1="250" y1="180" x2="330" y2="55" />
+    <line x1="250" y1="180" x2="370" y2="70" />
+  </g>
+
+  <!-- Rising Sun of Knowledge (Top Inner) -->
+  <g transform="translate(250, 125)">
+    <circle cx="0" cy="0" r="30" fill="url(#goldGrad)" />
+    <!-- Rays -->
+    <path d="M 0,-42 L 0,-34 M -30,-30 L -24,-24 M 30,-30 L 24,-24 M -42,0 L -34,0 M 42,0 L 34,0" 
+          stroke="#fde047" stroke-width="3.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Open Book of Learning -->
+  <g transform="translate(250, 200)">
+    <!-- Book pages background -->
+    <path d="M 0,25 C -25,12 -70,14 -90,26 L -90,-22 C -70,-34 -25,-32 0,-20 C 25,-32 70,-34 90,-22 L 90,26 C 70,14 25,12 0,25 Z" 
+          fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Center spine -->
+    <path d="M 0,-20 L 0,25" stroke="#94a3b8" stroke-width="2" />
+    <!-- Text lines on left page -->
+    <line x1="-75" y1="-12" x2="-20" y2="-12" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-75" y1="-2" x2="-20" y2="-2" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-75" y1="8" x2="-35" y2="8" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Text lines on right page -->
+    <line x1="20" y1="-12" x2="75" y2="-12" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="-2" x2="75" y2="-2" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="35" y1="8" x2="75" y2="8" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Golden bookmark ribbon -->
+    <path d="M 0,22 L 8,42 L 0,36 L -8,42 Z" fill="#f59e0b" />
+  </g>
+
+  <!-- Palm Branches (Symbol of Elim Oasis & Growth) -->
+  <g stroke="url(#goldGrad)" fill="none" stroke-width="2.5" stroke-linecap="round">
+    <!-- Left Palm Branch -->
+    <path d="M 155,295 C 145,260 150,215 168,175" />
+    <path d="M 155,280 C 140,270 135,255 138,245" />
+    <path d="M 152,250 C 136,242 133,228 140,218" />
+    <path d="M 156,220 C 142,212 143,198 152,190" />
+    <path d="M 164,190 C 153,180 156,168 168,162" />
+
+    <!-- Right Palm Branch -->
+    <path d="M 345,295 C 355,260 350,215 332,175" />
+    <path d="M 345,280 C 360,270 365,255 362,245" />
+    <path d="M 348,250 C 364,242 367,228 360,218" />
+    <path d="M 344,220 C 358,212 357,198 348,190" />
+    <path d="M 336,190 C 347,180 344,168 332,162" />
+  </g>
+
+  <!-- Torch / Flame (Enlightenment & Leadership) -->
+  <g transform="translate(250, 275)">
+    <!-- Torch Base -->
+    <path d="M -8,18 L 8,18 L 5,32 L -5,32 Z" fill="url(#goldShine)" />
+    <!-- Torch Flame -->
+    <path d="M 0,-15 C 8,-5 14,3 10,14 C 7,18 -7,18 -10,14 C -14,3 -8,-5 0,-15 Z" fill="#ef4444" />
+    <path d="M 0,-6 C 4,0 7,6 5,12 C 3,15 -3,15 -5,12 C -7,6 -4,0 0,-6 Z" fill="#fbbf24" />
+  </g>
+
+  <!-- Foundation Year Star -->
+  <g fill="url(#goldGrad)" transform="translate(250, 332)">
+    <text text-anchor="middle" font-family="'Cinzel', 'Times New Roman', serif" font-size="14" font-weight="700" letter-spacing="3" fill="#fde68a">EST. 1998</text>
+  </g>
+
+  <!-- Ribbon Banner at Bottom -->
+  <g transform="translate(0, 375)" filter="url(#shadow)">
+    <!-- Ribbon Ends Fold -->
+    <path d="M 60,70 L 110,45 L 110,85 Z" fill="#92400e" />
+    <path d="M 440,70 L 390,45 L 390,85 Z" fill="#92400e" />
+    <!-- Ribbon Tails -->
+    <path d="M 50,75 L 110,45 L 110,85 L 50,115 L 75,95 Z" fill="url(#goldShine)" stroke="#78350f" stroke-width="1.5" />
+    <path d="M 450,75 L 390,45 L 390,85 L 450,115 L 425,95 Z" fill="url(#goldShine)" stroke="#78350f" stroke-width="1.5" />
+    <!-- Main Ribbon Body -->
+    <path d="M 95,45 C 180,30 320,30 405,45 L 395,95 C 315,80 185,80 105,95 Z" 
+          fill="url(#goldGrad)" stroke="#78350f" stroke-width="1.5" />
+    <!-- Banner Text -->
+    <text x="250" y="72" text-anchor="middle" 
+          font-family="'Montserrat', 'Arial Black', sans-serif" 
+          font-size="25" font-weight="900" letter-spacing="4" fill="#0f172a">
+      ELIM SCHOOL
+    </text>
+    <text x="250" y="87" text-anchor="middle" 
+          font-family="'Montserrat', 'Arial', sans-serif" 
+          font-size="9" font-weight="800" letter-spacing="3" fill="#1e293b">
+      KITWE • ZAMBIA
+    </text>
+  </g>
+</svg>
